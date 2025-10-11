@@ -3,6 +3,7 @@
 
 
 import { CountrySelectField } from '@/components/forms/CountrySelectField';
+import FooterLink from '@/components/forms/FooterLink';
 import InputField from '@/components/forms/InputField';
 import SelectField from '@/components/forms/SelectField';
 import { Button } from '@/components/ui/button';
@@ -104,6 +105,11 @@ function SignUp() {
       <Button type="submit" className="yellow-btn w-full mt-8" disabled={isSubmitting}>
         {isSubmitting ? 'Creating Account...' : 'Start Your Investing Journey'}
       </Button>
+      <FooterLink 
+        text='Already have an account?'
+        linkText='Sign In'
+        href='/sign-in'
+      />
       </form>
     </>
   );
